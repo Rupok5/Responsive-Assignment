@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Responsive tailwind.</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<header>
+    <nav class="flex justify-center space-x-16 mt-4">
+        <div>
+            <h1 class="font-bold text-4xl pr-8">Pro Edu</h1>
+        </div>
+      <div class="bg-white space-x-8 text-gray-400">
+        <a href="">Home</a>
+        <a href="">Course</a>
+        <a href="">Deals</a>
+        <a href="">Succes</a>
+        <a href="">About</a>
+        <a href="">Search</a>
+      </div>
+      <button class="bg-white border-2 border-indigo-500/100 ml-4 text-blue-600 px-7 py-2 rounded">
+        Register</button>
+    </nav>
+</header>
+<body>
+ 
+    <section>
+      <div class="carousel w-0.75/2 h-[600px] m-16">
+        <div id="slide1" class="carousel-item relative w-full">
+         <div class="flex justify-center items-center w-full bg-cover"
+         style="background-image: url(image/cover/cover-1.png)"
+         >
+          
+          <div class="w-3/4 text-center pt-32">
+            <h1 class="font-bold text-5xl text-white">Get started Digital <br> learning</h1>
+            <p class="text-white pt-8 pb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Consectetur atque, qui facilis natus accusantium eum?</p>
+            <button class="bg-blue-600 px-8 py-3 rounded text-white">Get Started</button>
+          </div>
+         </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+         <div class="flex justify-center items-center w-full bg-cover"
+         style="background-image: url(image/cover/cover-2.jpg)"
+         >
+          
+          <div class="w-3/4 text-center pt-32">
+            <h1 class="font-bold text-5xl text-white">Get started Digital <br> learning</h1>
+            <p class="text-white pt-8 pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quia necessitatibus dolorum minima, modi dolores aut.</p>
+            <button class="bg-blue-600 px-8 py-3 rounded text-white">Get Started</button>
+          </div>
+         </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+         <div class="flex justify-center items-center w-full bg-cover"
+         style="background-image: url(image/cover/cover-3.jpg)"
+         >
+          
+          <div class="w-3/4 text-center pt-32">
+            <h1 class="font-bold text-5xl text-white">Get started Digital <br> learning</h1>
+            <p class="text-white pt-8 pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Praesentium placeat eveniet fuga vitae sit vel!</p>
+            <button class="bg-blue-600 px-8 py-3 rounded text-white">Get Started</button>
+          </div>
+         </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+       
+        
+      </div>
+    </section>
+    <section>
+      <div class="text-center bg-slate-500">
+        <h1 class="font-bold text-5xl">Discover our popular Courses</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat asperiores debitis aperiam? Autem provident cumque blanditiis, hic facilis magnam officia in tenetur minima ut corporis eveniet, necessitatibus exercitationem perferendis excepturi.</p>
+      </div>
+    </section>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
